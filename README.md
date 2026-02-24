@@ -1,200 +1,86 @@
-===============================
+# 📱 GamingBoost Android App
 
-PARTE 1 – BACKEND (agregar link del repo Android)
+Aplicación Android para la plataforma GamingBoost.
 
-===============================
-
-
-
-1\) Ir al repo backend:
-
-cd "E:\\AllMyThings\\Danielito Apps\\gamingboost\_api"
-
-
-
-2\) Abrir README:
-
-notepad README.md
-
-
-
-3\) Agregar esta sección en cualquier parte lógica (ej: antes de Instalación o después de Tecnologías):
-
-
-
-\## 📱 Repositorio Android
-
-\- https://github.com/Danny8ac/GamingBoost-Android
-
-
-
-4\) Guardar y cerrar.
-
-
-
-5\) Subir cambios:
-
-git add README.md
-
-git commit -m "Add Android repo link"
-
-git push
-
-
-
-
-
-===============================
-
-PARTE 2 – ANDROID (crear README profesional)
-
-===============================
-
-
-
-1\) Ir al proyecto Android:
-
-cd "E:\\AllMyThings\\AStudioSaving"
-
-
-
-2\) Crear/abrir README:
-
-notepad README.md
-
-
-
-3\) Pegar TODO esto dentro del archivo:
-
-
-
-\# 📱 GamingBoost Android App
-
-
-
-App Android para GamingBoost (Kotlin + Jetpack Compose).  
-
-Se conecta al mismo backend Laravel usado por la web.
-
-
+La app está desarrollada en Kotlin con Jetpack Compose y se conecta al backend Laravel del proyecto.
 
 ---
 
+## 🚀 Tecnologías
 
-
-\## ✅ Tecnologías
-
-\- Kotlin
-
-\- Jetpack Compose
-
-\- Retrofit
-
-\- Coroutines
-
-\- Custom Tabs (Checkout)
-
-
+- Kotlin
+- Jetpack Compose
+- Retrofit
+- Coroutines
+- Custom Tabs (para checkout)
 
 ---
 
+## ▶️ Cómo ejecutar el proyecto
 
+### 1️⃣ Abrir en Android Studio
 
-\## ⚙️ Requisitos
-
-\- Android Studio
-
-\- Backend Laravel ejecutándose localmente
-
-
+- Abrir Android Studio
+- Click en "Open"
+- Seleccionar esta carpeta del proyecto
 
 ---
 
-
-
-\## ▶️ Cómo ejecutar
-
-
-
-\### 1) Abrir proyecto
-
-En Android Studio: Open → selecciona esta carpeta del proyecto.
-
-
-
-\### 2) Ejecutar backend
+### 2️⃣ Ejecutar el backend
 
 En el proyecto Laravel:
 
+```bash
 php artisan serve --host=0.0.0.0 --port=8000
+```
 
+---
 
+### 3️⃣ Base URL (Emulador)
 
-\### 3) Base URL (Emulador)
+La app usa:
 
+```
 http://10.0.2.2:8000/api
+```
 
-
-
-> En dispositivo físico usar tu IP local (ej: http://192.168.X.X:8000/api)
-
-
+> 10.0.2.2 es la IP especial para que el emulador acceda al localhost de tu PC.
 
 ---
 
+## 🔗 Deep Link
 
+Después del pago el backend redirige a:
 
-\## 🔗 Deep Link
-
-La app escucha:
-
+```
 gamingboost://payment-result
+```
 
-
-
-El backend redirige con ese deep link después del pago.
-
-
+La app detecta ese deep link y refresca automáticamente los pedidos.
 
 ---
 
+## ✅ Funcionalidades
 
-
-\## ✅ Funciones
-
-\- Login
-
-\- Catálogo de boosts
-
-\- Crear pedidos
-
-\- Checkout simulado (Custom Tabs)
-
-\- Historial de pedidos con estados
-
-\- Auto refresh al volver del deep link
-
-
+- Login con token (Sanctum)
+- Ver catálogo de boosts
+- Crear órdenes
+- Checkout simulado
+- Historial de pedidos
+- Estados: Pagado / Pendiente / Cancelado
+- Auto refresh tras pago
 
 ---
 
+## 🧠 Backend API
 
+Repositorio del backend:
 
-\## 🧠 Backend API Repo
-
-\- https://github.com/Danny8ac/GamingBoost-
-
-
+https://github.com/Danny8ac/GamingBoost-
 
 ---
 
+## 👨‍💻 Autor
 
-
-\## 👨‍💻 Autor
-
-Daniel Ochoa — Proyecto académico (2026)
-
-
-
-
-
+Daniel Ochoa  
+Proyecto académico – 2026
